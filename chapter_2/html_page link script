@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        //경고창 출력//
+        alert("안녕 자바 스크립트");
+    </script>
+</head>
+<body>
+    <h1> 홈페이지 환영</h1>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<script>
+        //경고창 출력//
+        alert("out 스크립트");
+    </script>
