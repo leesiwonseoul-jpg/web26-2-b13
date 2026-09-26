@@ -12,6 +12,15 @@
         <a href="text_anchor.html">웹 페이지 내부에 연결 </a><br>
         <a href="text_content.html">본문 단락 구분 </a><br>
         <a href="text_header.html">글자 크기 변경 </a><br>
+<a href="12table_cell.html">글자 크기 변경 </a><br>
+<a href="13table_span.html">글자 크기 변경 </a><br>
+<a href="14image_basic.html">글자 크기 변경 </a><br>
+<a href="15form__basic.html">글자 크기 변경 </a><br>
+<a href="16from_radio.html">글자 크기 변경 </a><br>
+<a href="17form_selectBasic.html">글자 크기 변경 </a><br>
+<a href="18note_textarea.html">글자 크기 변경 </a><br>
+<a href="19space_block.html">글자 크기 변경 </a><br>
+
 
 </body>
 </html>
