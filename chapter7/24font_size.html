@@ -1,33 +1,73 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
-    <meta charset="UTF-8">    
-    <title>4. 글자 속성</title>
-    
+    <title>CSS3 Font Property - 종합 예제</title>
+    <style>
+        /* 1. font-size 예제 스타일 (코드 6-24) */
+        .a { font-size: 32px; }
+        .b { font-size: 2em; }
+        .c { font-size: large; }
+        .d { font-size: small; }
+
+        /* 2. font-family 지정 (코드 6-25) */
+        .font_arial { font-family: Arial; }
+        .font_roman { font-family: 'Times New Roman'; }
+
+        /* 3. 글꼴 여러 개 지정 (코드 6-26) */
+        .font_fallback_arial { font-family: '없는 글꼴', Arial; }
+        .font_fallback_roman { font-family: 'Times New Roman', Arial; }
+
+        /* 4. 웹 브라우저 고유 글꼴 적용 (코드 6-27) */
+        .font_generic_sans { font-family: '없는 글꼴', sans-serif; }
+        .font_generic_serif { font-family: '없는 글꼴', serif; }
+
+        /* 구분용 레이아웃 스타일 */
+        section {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-top: 0;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <h2>6.4.1 글자 크기와 글꼴(예제6-24 ~ 6-27)</h2>
-    <h3><b>. font-size: 글자 크기 지정</b></h3>
-    <h3><b>. font-family: 글꼴 지정</b></h3>
-    <h4>(a) 끝이 뾰족한 글자 Serif  (b) 끝이 네모진 글자 Sans-serif (c) 고정폭 글꼴 Mono space</h4>
 
-    <h3>. font-weight: 글자 두께 지정</h3>
-    <h3>. font-style: 글자 스타일 지정</h3>
-    <h3>. text-decoration: 텍스트 장식 지정</h3>
-    <hr>
+    <!-- 코드 6-24: font-size -->
+    <section>
+        <h2>1. 글자 크기 (font-size) 예제 [코드 6-24]</h2>
+        <h1>Lorem ipsum</h1>
+        <p class="a">Lorem ipsum</p>
+        <p class="b">Lorem ipsum</p>
+        <p class="c">Lorem ipsum</p>
+        <p class="d">Lorem ipsum</p>
+    </section>
 
-    <h3>[예제6-27]4.웹 브라우저 고유 글꼴 적용하기</h3>
-    <h3>[예제6-26]3.글꼴 여러 개 지정하기 </h3>
-    <h3>[예제6-25]2.글꼴 1개 지정하기 </h3>    
-    <h1 class="font_arial">Lorem ipsum dolor sit amet</h1>
-    <p class="font_roman">Lorem ipsum</p>
+    <!-- 코드 6-25: font-family 1개 지정 -->
+    <section>
+        <h2>2. 글꼴 1개 지정 (font-family) 예제 [코드 6-25]</h2>
+        <h1 class="font_arial">Lorem ipsum</h1>
+        <p class="font_roman">Lorem ipsum</p>
+    </section>
 
-    <hr>
-    <h3>[예제6-24]1.글자크기 조정하기: HTML페이지에서 p태그의 기본 크기는 16px입니다. </h3>
-    <h1>Lorem ipsum dolor sit amet</h1>
-    <p class="a">Lorem ipsum</p>
-    <p class="b">Lorem ipsum</p>
-    <p class="c">Lorem ipsum</p>
-    <p class="d">Lorem ipsum</p>
+    <!-- 코드 6-26: 글꼴 여러 개 지정 (Fallback) -->
+    <section>
+        <h2>3. 글꼴 여러 개 지정 (Fallback) 예제 [코드 6-26]</h2>
+        <h1 class="font_fallback_arial">Lorem ipsum</h1>
+        <p class="font_fallback_roman">Lorem ipsum</p>
+    </section>
+
+    <!-- 코드 6-27: 웹 브라우저 고유 글꼴 적용 -->
+    <section>
+        <h2>4. 웹 브라우저 고유 글꼴 적용 예제 [코드 6-27]</h2>
+        <h1 class="font_generic_sans">Lorem ipsum</h1>
+        <p class="font_generic_serif">Lorem ipsum</p>
+    </section>
+
 </body>
 </html>
